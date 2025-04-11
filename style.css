@@ -82,4 +82,9 @@ input {
     box-shadow: var(--shadow-soft);
     background-color: var(--color-surface);
     color: var(--color-text-primary);
+    text-align: center;
+}
+
+p.output {
+    opacity: 0;
 }
