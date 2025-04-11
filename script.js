@@ -26,7 +26,7 @@ function calculateResult(expression) {
     while (keepGoing) {
         equation = `${expression[0]}${operations[0]}${expression[1]}${operations[1]}${expression[2]}${operations[2]}${expression[3]}`;
         if (eval(equation) == 10) {
-            output.innerText = `The equation ${equation} = 10`.replace('*', '×').replace('/', '÷').replace('**', '^').replace(/(\d+)%(\d+)/g, 'mod($1, $2)');
+            output.innerText = `${equation} = 10`.replace('*', '×').replace('/', '÷').replace('**', '^').replace(/(\d+)%(\d+)/g, 'mod($1, $2)');
             output.style.opacity = 1;
             keepGoing = false;
         }
